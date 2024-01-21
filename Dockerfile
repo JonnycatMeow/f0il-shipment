@@ -2,12 +2,10 @@ FROM node:20-alpine
 
 RUN apk add --no-cache git
 
-RUN git clone --depth=1 https://github.com/Templates-dude/ultra-cool-app.git
+RUN git clone https://github.com/JonnycatMeow/Tinf0il-new.git
 
-WORKDIR /ultra-cool-app
+WORKDIR /Tinf0il-new
 
-RUN npm install
+RUN yarn install
 
-CMD npm start
-
-EXPOSE 8080
+CMD yarn start
